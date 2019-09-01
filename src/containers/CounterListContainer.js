@@ -10,7 +10,7 @@ const mapDispatchToProps = (dispatch) => ({
   onDecrement: (index) => dispatch(actions.decrement(index)),
   onSetColor: (index) => {
     const randomColor = getRandomColor();
-    dispatch(actions.setColor({ index, randomColor }));
+    dispatch(actions.setColor({ index, color: randomColor }));
   },
 });
 
